@@ -1,8 +1,8 @@
-import React from 'react'
-import { useGlobalContext } from './context'
+import React from 'react';
+import { useGlobalContext } from './context';
 
 const SetupForm = () => {
-  const { quiz, handleChange, handleSubmit, error } = useGlobalContext()
+  const { quiz, handleChange, handleSubmit, error } = useGlobalContext();
   return (
     <main>
       <section className='quiz quiz-small'>
@@ -25,7 +25,7 @@ const SetupForm = () => {
           {/* category */}
 
           <div className='form-control'>
-            <label htmlFor='category'>category</label>
+            <label htmlFor='category'>Select category</label>
             <select
               name='category'
               id='category'
@@ -65,7 +65,7 @@ const SetupForm = () => {
         </form>
       </section>
     </main>
-  )
-}
+  );
+};
 
-export default SetupForm
+export default SetupForm;
